@@ -17,28 +17,28 @@
     <div class="input-and-submit">
       <input type="text" name="id-or-domain" id="ip-or-domain" placeholder="Search for any IP address or domain">
       <div class="button-container">
-        <button><img src="./images/icon-arrow.svg" alt="arrow-icon"></button>
+        <button><img src="./images/icon-arrow.svg" class="submit-button" alt="arrow-icon"></button>
       </div>
     </div>
   <section class="output">
     <div class="output-item">
       <h2>IP Address</h2>
-      <p>192.212.174.101</p>
+      <p id="ip-address"></p>
     </div>
     <hr>
     <div class="output-item">
       <h2>Location</h2>
-      <p>Brooklyn, NY 10001</p>
+      <p id="location"></p>
     </div>
     <hr>
     <div class="output-item">
       <h2>Timezone</h2>
-      <p>UTC -5:00<!-- add offset value dynamically using the API --></p>
+      <p id="timezone">UTC <!-- add offset value dynamically using the API --></p>
     </div>
     <hr>
     <div class="output-item">
       <h2>ISP</h2>
-      <p>Space X Starlink</p>
+      <p id="isp"></p>
     </div>
   </section>
   <section class="map">
@@ -49,5 +49,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.tyonweekes.com">Tyon Weekes</a>.
   </div>
+  <script type="text/javascript" src="./config.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
