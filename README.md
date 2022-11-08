@@ -64,4 +64,4 @@ I would like to continue practicing JavaScript.
 
 ## Acknowledgments
 
-Thanks to Siphiwo Julayi's YouTube video for helping me figure out how to use fetch with an IP API. Also thanks to Himanshu Tegyalwar's solution for an alternate IP API, when the suggested one was not working for me.
+Thanks to Siphiwo Julayi's YouTube video for helping me figure out how to use fetch with an IP API. Also thanks to Himanshu Tegyalwar's solution for a width issue fix and an alternate IP API, when the suggested one was not working for me.
