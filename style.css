@@ -12,10 +12,14 @@
 }
 
 /* General */
-.background-pattern {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+main {
+    min-height: 100vh;
+}
+
+.top {
+   height: 40vh;
+   padding: 1.25rem;
+   background: url(./images/pattern-bg.png) no-repeat top center / cover; 
 }
 
 h1 {
@@ -24,6 +28,9 @@ h1 {
     color: white;
     font-size: 34px;
     margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -75,12 +82,6 @@ button {
     cursor: pointer;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .output {
     display: flex;
     justify-content: center;
@@ -91,19 +92,22 @@ button {
     width: 1111px;
     position: absolute;
     top: 170px;
-    z-index: 2;
+    z-index: 2000;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
 }
 
 .output-item {
     display: block;
 }
 
+.output-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #map {
-    width: 1440px;
-    height: 520px;
-    position: absolute;
-    top: 250px;
-    z-index: -1;
+    height: 70vh;
 }
 
 /* Attribution */

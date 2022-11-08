@@ -14,36 +14,39 @@
   crossorigin=""/>
 </head>
 <body>
-<main class="main-container">
-  <img src="./images/pattern-bg.png" class="background-pattern" alt="pattern-background">
-  <h1>IP Address Tracker</h1>
-    <div class="input-and-submit">
-      <input type="text" name="id-or-domain" id="ip-or-domain" placeholder="Search for any IP address or domain">
-      <div class="button-container">
-        <button><img src="./images/icon-arrow.svg" class="submit-button" alt="arrow-icon"></button>
+<main>
+  <div class="top">
+    <h1>IP Address Tracker</h1>
+      <div class="input-and-submit">
+        <input type="text" name="id-or-domain" id="ip-or-domain" placeholder="Search for any IP address or domain">
+        <div class="button-container">
+          <button><img src="./images/icon-arrow.svg" class="submit-button" alt="arrow-icon"></button>
+        </div>
       </div>
-    </div>
-  <section class="output">
-    <div class="output-item">
-      <h2>IP Address</h2>
-      <p id="ip-address"></p>
-    </div>
-    <hr>
-    <div class="output-item">
-      <h2>Location</h2>
-      <p id="location"></p>
-    </div>
-    <hr>
-    <div class="output-item">
-      <h2>Timezone</h2>
-      <p id="timezone">UTC <!-- add offset value dynamically using the API --></p>
-    </div>
-    <hr>
-    <div class="output-item">
-      <h2>ISP</h2>
-      <p id="isp"></p>
-    </div>
-  </section>
+      <section class="output-container">
+        <section class="output">
+          <div class="output-item">
+            <h2>IP Address</h2>
+            <p id="ip-address"></p>
+          </div>
+          <hr>
+          <div class="output-item">
+            <h2>Location</h2>
+            <p id="location"></p>
+          </div>
+          <hr>
+          <div class="output-item">
+            <h2>Timezone</h2>
+            <p id="timezone">UTC </p>
+          </div>
+          <hr>
+          <div class="output-item">
+            <h2>ISP</h2>
+            <p id="isp"></p>
+          </div>
+        </section>
+      </section>
+  </div>
   <div id="map">
   </div>
 </main>
